@@ -1,0 +1,24 @@
+{
+  "name": "calculatorweekend",
+  "version": "1.0.0",
+  "description": "weekend calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daydreammsp/calculatorWeekEnd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daydreammsp/calculatorWeekEnd/issues"
+  },
+  "homepage": "https://github.com/daydreammsp/calculatorWeekEnd#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
