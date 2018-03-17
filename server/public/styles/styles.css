@@ -8,11 +8,19 @@ width: 100%;
 .answer{
     font-size: 40px;
 }
+/* .col-lg-8{
+    width: 48%;
+}
+.col-lg-4{
+    width: 50%;
+} */
 .displayArea{
     min-height: 60px;
-    min-width: 100%;
+    min-width: 50%;
     background-color: brown
 }
+
+
 .funcButton{
     width: 100%;
     font-size: 20px;
