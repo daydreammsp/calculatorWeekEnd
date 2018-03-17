@@ -64,7 +64,11 @@ for(let num of numServer){
     
 }
 
-
+app.post('/reset', (req, res) => {
+    numServer = [];
+    x = 0;
+    res.sendStatus(200);
+  })
 
 
 app.listen(PORT, () => {

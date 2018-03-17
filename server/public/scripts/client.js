@@ -16,7 +16,26 @@ function readyNow(){
         $('#divide').on('click', function(){
           currentAdd = 4
         });
+        $('#reset').on('click', reset1);
 
+}
+function reset1(){
+    let noNum = [];
+  $('#input').append().val('');
+  $('#input2').append().val('');
+  $('#answer').empty();
+  $('.history').empty();
+
+  $.ajax({
+    type: 'POST',
+    data: noNum,
+    url: '/reset'
+  }).done(function(response){
+    console.log('reset');
+    
+    }).fail(function(response){
+    alert('did not work');
+  })
 }
 
 function inputNumber(){
@@ -51,7 +70,7 @@ function inputNumber(){
       }
     })
   }
-
+  
 
 
 
