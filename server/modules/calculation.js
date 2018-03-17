@@ -1,4 +1,4 @@
 
 
 
-module.exports = calculate;
+// module.exports = calculate;

@@ -22,7 +22,7 @@ function readyNow(){
 function inputNumber(){
  let numIn = $('#input').val();
  let numIn2 = $('#input2').val()
- 
+ $('#input').append().val('')
   
  $.ajax({
     type: 'POST',
@@ -43,6 +43,12 @@ function inputNumber(){
       url: '/number'
     }).done(function(response){
       console.log(response);
+      for(let num of response){
+        $('#answer').empty()
+        $('#answer').append(num.answer1);
+        $('#answer').empty()
+        $('.history').append(num.numIn, num.opp2, num.answer1);
+      }
     })
   }
 

@@ -18,6 +18,7 @@ app.post('/number', (req, res) => {
     let receiveNum = req.body
     
     receiveNum.answer1 = true;
+    receiveNum.opp2 = true;
     numServer.push(receiveNum);
     
     
@@ -32,27 +33,30 @@ app.post('/number', (req, res) => {
 for(let num of numServer){
     let m = parseInt(num.opperator)
     let r = parseInt(num.numIn)
-    
+    let r2 = parseInt(num.numIn2)
+    x = 0;
         switch(m) {
+            
             case 1:
-               x = r + r;
+               x = r + r2;
                num.answer1 = x
-           
+               num.opp2 = '+';
                 break;
             case 2:
-            x = r - r;
+            x = r - r2;
             num.answer1 = x
-            
+            num.opp2 = '-';
+
                 break;
             case 3:
-            x = r * r;
+            x = r * r2;
             num.answer1 = x
-            
+            num.opp2 = '*';
                 break;
             case 4:
-            x = r / r;
+            x = r / r2;
             num.answer1 = x
-            
+            num.opp2 = '/';
                 break;
         }
         
