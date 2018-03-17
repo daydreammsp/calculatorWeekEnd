@@ -46,8 +46,8 @@ function inputNumber(){
       for(let num of response){
         $('#answer').empty()
         $('#answer').append(num.answer1);
-        $('#answer').empty()
-        $('.history').append(num.numIn, num.opp2, num.answer1);
+        
+        $('.history').append('<h1>',num.numIn, num.opp2, num.numIn2,'=', num.answer1,'</h1>');
       }
     })
   }

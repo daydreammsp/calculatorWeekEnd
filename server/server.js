@@ -46,7 +46,6 @@ for(let num of numServer){
             x = r - r2;
             num.answer1 = x
             num.opp2 = '-';
-
                 break;
             case 3:
             x = r * r2;
