@@ -2,6 +2,7 @@
 font-size: 90px;
 
 }
+
 button{
 width: 100%;
 } 
@@ -17,7 +18,7 @@ width: 100%;
 .displayArea{
     min-height: 60px;
     min-width: 50%;
-    background-color: brown
+    
 }
 
 
@@ -27,12 +28,12 @@ width: 100%;
 }
 .numDisplay{
     font-size: 40px;
-    background-color: antiquewhite;
+   
 width:30%
 }
 .opDisplay{
     font-size: 40px;
     min-height: 40px;
-    background-color: rgb(37, 114, 84);
+    
     width:30%
 }
