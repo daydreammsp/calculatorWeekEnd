@@ -91,7 +91,7 @@ function inputNumber(){
         $('.displayTotal').empty();
         $('.displayTotal').append('<span class="answer">' + num.answer1 + '</span>');
         
-        $('.history').append('<h1>' + num.numIn + num.opp2 + num.numIn2 + '=' + num.answer1 + '</h1>');
+        $('.history').append('<h1>' + num.numIn + ' ' + num.opp2 + ' ' + num.numIn2 + ' = ' + num.answer1 + '</h1>');
       }
     })
   }
